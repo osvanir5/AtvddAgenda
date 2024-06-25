@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    background-color: #04C9F4;
+    padding: 1px;
+    width: 99.7vw;
+    height: 5vh;
+}
+
+h3 {
+    color: #fff;
+    margin: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+
+#contener {
+    display: grid;
+    grid-template-areas:
+    "informacoes informacoes botoesColoridos "
+    "informacoes informacoes botoesColoridos";
+}
+
+.cadrastro {
+    background-color: #E7E7E7;
+    grid-area: informacoes;
+    width: 55vw;
+    height: 30vh;
+    display: grid;
+    grid-template-columns: repeat(2, 27.5vw);
+    grid-template-areas:
+    "nome sobrenome"
+    "email email"
+    "telefone telefone";
+}
+
+#nome {
+    grid-area: nome;
+    margin: 6px;
+}
+
+#sobrenome {
+    grid-area: sobrenome;
+    margin: 6px;
+}
+
+#email {
+    grid-area: email;
+    margin: 6px;
+}
+
+#telefone {
+    grid-area: telefone;
+    margin: 6px;
+}
+
+#Nome, #Sobrenome {
+    width: 90%;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+#Telefone, #Email{
+    width: 95%;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+#Nome, #Telefone, #Email, #Sobrenome:disabled{
+    width: 90%;
+    padding: 10px;
+    background-color: #fff;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+#botoesColoridos {
+    grid-area: botoesColoridos;
+    display: flex;
+    flex-direction: column;
+    width: 44vw;
+    gap: 10px;
+}
+
+#editar, #salvar, #cancelar, #excluir {
+    margin-top: 3px;
+    margin-block-end: 3px;
+    width: 150px;
+    height: 20%;
+    padding: 4px;
+    background-color: #fff;
+    color: #000;
+}
+
+#botoesDeNavegacao {
+    margin: 0;
+    height: 98px;
+}
+
+#voutarAOprimeiro,#voutarAnterior,#proximo,#ultimo {
+    background-color: black;
+    color: #fff;
+    height: 50px;
+    width: 80px;
+}
+
+#incluir{
+    background-color: green;
+    margin-top: 3px;
+    margin-block-end: 3px;
+    width: 150px;
+    height: 20%;
+    padding: 4px;
+    color: #000;
+}
+
+button{
+    background-color: #000;
+    padding: 20px;
+    width: 100px;
+    color: #fff;
+}
+
+@media screen and (min-width: 1524px) {
+    #Nome, #Sobrenome {
+        width: 94%;
+        padding: 10px;
+        border: none;
+        outline: none;
+    }
+    
+    #Telefone, #Email{
+        width: 97%;
+        padding: 10px;
+        border: none;
+        outline: none;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1523px){
+    #Nome, #Sobrenome {
+        width: 90%;
+        padding: 10px;
+        border: none;
+        outline: none;
+    }
+    
+    #Telefone, #Email{
+        width: 95%;
+        padding: 10px;
+        border: none;
+        outline: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #Nome, #Sobrenome {
+        width: 80%;
+        padding: 10px;
+        border: none;
+        outline: none;
+    }
+    
+    #Telefone, #Email{
+        width: 90%;
+        padding: 10px;
+        border: none;
+        outline: none;
+    }
+
+    button{
+        background-color: #000;
+        padding: 20px;
+        width: 82.5px;
+        color: #fff;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 450px) {
+    #Nome, #Sobrenome {
+        width: 70%;
+        padding: 11px;
+        border: none;
+        outline: none;
+    }
+    
+    #Telefone, #Email{
+        width: 87%;
+        padding: 10px;
+        border: none;
+        outline: none;
+    }
+
+    #Sobrenome:disabled{
+        width: 75%;
+        padding: 10px;
+        background-color: #fff;
+    }
+
+    button{
+        background-color: #000;
+        padding: 10px;
+        width: 48.5px;
+        color: #fff;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 374px) {
+    #Nome, #Sobrenome {
+        width: 75%;
+        padding: 11px;
+        border: none;
+        outline: none;
+    }
+    
+    #Telefone, #Email{
+        width: 90%;
+        padding: 10px;
+        border: none;
+        outline: none;
+    }
+
+    #Sobrenome:disabled{
+        width: 80%;
+        padding: 10px;
+        background-color: #fff;
+    }
+
+    button{
+        background-color: #000;
+        padding: 7px;
+        width: 35.5px;
+        color: #fff;
+    }
+
+    .cadrastro {
+        background-color: #E7E7E7;
+        grid-area: informacoes;
+        width: 58vw;
+        height: 45vh;
+        display: grid;
+        grid-template-columns: repeat(2, 27.5vw);
+        grid-template-areas:
+        "nome sobrenome"
+        "email email"
+        "telefone telefone";
+    }
+
+    #editar, #salvar, #cancelar, #excluir {
+        margin-top: 3px;
+        margin-block-end: 3px;
+        width: 130px;
+        height: 20%;
+        padding: 4px;
+        background-color: #fff;
+        color: #000;
+    }
+
+    #incluir{
+        background-color: green;
+        margin-top: 3px;
+        margin-block-end: 3px;
+        width: 130px;
+        height: 20%;
+        padding: 4px;
+        color: #000;
+    }
+
+    header {
+        background-color: #04C9F4;
+        padding: 1px;
+        width: 99.7vw;
+        height: 7vh;
+    }
+}

@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+}
+
+body{
+    background-color: #E7E7E7;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+header{
+    background-color: #04C9F4;
+    text-align: center;
+    width: 100vw;
+    padding: 6px;
+}
+
+#contener{
+    background-color: #D9D9D9;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.cadrastro{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.logo{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-stretch: semi-condensed;
+    background-color: #fff;
+    border: solid 1px #fff;
+    mix-blend-mode: color-burn;
+}
+
+.botao{
+    display: flex;
+    justify-content: center;
+}
+
+#botao{
+    background-color: #04C9F4;
+    border: solid 1px #04C9F4;
+    color: #fff;
+    font-size: large;
+    padding: 10px;
+    width: 230px;
+}
+
+input{
+    padding: 20px;
+    width: 350px;
+    border: solid 1px #fff;
+    outline: none;
+}
+
+input:focus{
+    padding: 20px;
+    width: 350px;
+    border: solid 1px blue;
+    outline: none;
+}
+
+p{
+    color: red;
+    text-align: center;
+}
+
+@media screen and (max-width:767px){
+    #contener{
+        background-color: #D9D9D9;
+        height: 300px;
+        width: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        padding: 4px;
+    }
+
+    .logo{
+        width: 100px;
+        height: 100px;
+        border: solid 1px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-stretch: semi-condensed;
+        background-color: #fff;
+        border: solid 1px #fff;
+    }
+
+    img{
+        width: 130px;
+        height: 130px;
+    }
+
+    input{
+        padding: 10px;
+        width: 200px;
+        border: solid 1px #fff;
+        outline: none;
+    }
+
+    #botao{
+        background-color: #04C9F4;
+        border: solid 1px #04C9F4;
+        color: #fff;
+        font-size: large;
+        padding: 10px;
+        width: 150px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    input{
+        padding: 20px;
+        width: 200px;
+        border: solid 1px #fff;
+        outline: none;
+    }
+    
+    input:focus{
+        padding: 20px;
+        width: 200px;
+        border: solid 1px blue;
+        outline: none;
+    }
+}

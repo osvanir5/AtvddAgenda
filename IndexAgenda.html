@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cadrastro de Contato</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estiloAgenda.css" type="text/css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <h3>Cadrastro de Contato</h3>
+        </header>
+        <div id="contener">
+            <div class="cadrastro">
+                <div id="nome">
+                    <p>Nome</p>
+                    <input type="text" id="Nome" disabled>
+                </div>
+            <br>
+            <div id="sobrenome">
+                <p>Sobrenome</p>
+                <input type="text" id="Sobrenome" disabled>
+            </div>
+            <br>
+            <div id="email">
+                <p>Email</p>
+                <input type="email" id="Email" disabled>
+            </div>
+            <br>
+            <div id="telefone">
+                <p>Telefone</p>
+                <input type="number" id="Telefone" disabled>
+            </div>
+            </div>
+            <div id="botoesColoridos">
+                <button onclick="incluir()" id="incluir">INCLUIR</button>
+                <button onclick="editar()" id="editar">EDITAR</button disabled>
+                <button onclick="Salvar_Array()" id="salvar">SALVAR</button disabled>
+                <button onclick="cancelar()" id="cancelar">CANCELAR</button disabled>
+                <button onclick="excluir()" id="excluir">EXCLUIR</button disabled>
+            </div>
+        </div>
+        <div id="botoesDeNavegacao">
+            <button onclick="voltarAoPrimeiro()">|< </button>
+            <button onclick="voltarAnterior()"> < </button>
+            <button onclick="proximo()"> > </button>
+            <button onclick="ultimo()"> |></button>
+        </div>
+    </body>
+</html>
